@@ -1,5 +1,6 @@
 h1{
   color: white !important;
+  text-align: center;
 }
 body{
   background-image: url(images/pexels-david-besh-884788.jpg);
@@ -22,11 +23,13 @@ table{
     background-size: cover;
   }
 
-h1{
-  color: yellowgreen !important;
-}
+
   
   .shift{
       width: -300px !important;
+    }
+
+    table{
+      width: 100% !important;
     }
 }
