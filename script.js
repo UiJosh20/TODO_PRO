@@ -42,6 +42,7 @@ function editAny(i){
   var check = confirm("are you sure you want to edit?")
   if (check == true){
     if(title == "" && subtitle == ""){
+      warnd.play()
       showErr.innerHTML = `<p class="alert alert-warning text-center">you need to fill the inputs</p>`;
     }else{
       wrath.play()
