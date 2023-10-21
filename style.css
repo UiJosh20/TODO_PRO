@@ -18,7 +18,7 @@ table{
 
 @media screen and (max-width: 475px) {
   body,html{
-    background-image: url(images/peakpx\ \(2\).jpg);
+    background-image: url(images/zane-lee-IHj0xtWtLKE-unsplash);
     overflow-x:hidden;
     background-size: cover;
   }
@@ -33,3 +33,17 @@ table{
       width: 100% !important;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+  body,html{
+    background-image: url(images/zane-lee-IHj0xtWtLKE-unsplash.jpg);
+    overflow-x:hidden;
+    background-size: cover;
+  }
+
+}
+
+
+
+  
