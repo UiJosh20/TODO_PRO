@@ -44,12 +44,12 @@ function editAny(i){
     if(title == "" && subtitle == ""){
       showErr.innerHTML = `<p class="alert alert-warning text-center">you need to fill the inputs</p>`;
     }else{
-      todoTitle.value = "";
-      todoSub.value = "";
       wrath.play()
       showErr.innerHTML = `<p class="alert alert-success text-center">Edited successfully</p>`;
       todoArray[i]["title"] = document.getElementById('todoTitle').value
       todoArray[i]["subtitle"] = document.getElementById('todoSub').value
+      todoTitle.value = "";
+      todoSub.value = "";
       displayAll()
     }
   }else{
