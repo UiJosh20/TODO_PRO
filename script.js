@@ -37,14 +37,20 @@ function deleteAny(i){
 }
 
 function editAny(i){
-  
+  var title = todoTitle.value;
+  var subtitle = todoSub.value;
   var check = confirm("are you sure you want to edit?")
   if (check == true){
-    wrath.play()
-    showErr.innerHTML = `<p class="alert alert-success text-center">Edited successfully</p>`;
-    todoArray[i]["title"] = document.getElementById('todoTitle').value
-    todoArray[i]["subtitle"] = document.getElementById('todoSub').value
-    displayAll()
+    if(title == "" && subtitle == ""){
+      showErr.innerHTML = `<p class="alert alert-warning text-center">you need to fill the inputs</p>`;
+    }else{
+
+      wrath.play()
+      showErr.innerHTML = `<p class="alert alert-success text-center">Edited successfully</p>`;
+      todoArray[i]["title"] = document.getElementById('todoTitle').value
+      todoArray[i]["subtitle"] = document.getElementById('todoSub').value
+      displayAll()
+    }
   }else{
     warnd.play()
     showErr.innerHTML = `<p class="alert alert-warning text-center">This info will not be edited</p>`;
