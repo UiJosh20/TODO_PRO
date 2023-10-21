@@ -1,4 +1,6 @@
-
+h1{
+  color: white !important;
+}
 body{
   background-image: url(images/pexels-david-besh-884788.jpg);
   background-size: cover;
@@ -20,7 +22,9 @@ table{
     background-size: cover;
   }
 
-
+h1{
+  color: yellowgreen !important;
+}
   
   .shift{
       width: -300px !important;
