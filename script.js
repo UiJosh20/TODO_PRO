@@ -46,8 +46,8 @@ function editAny(i){
     }else{
 
       wrath.play()
-      todoTitle.value = ""
-      todoSub.value = ""
+      todoTitle.value = "";
+      todoSub.value = "";
       showErr.innerHTML = `<p class="alert alert-success text-center">Edited successfully</p>`;
       todoArray[i]["title"] = document.getElementById('todoTitle').value
       todoArray[i]["subtitle"] = document.getElementById('todoSub').value
